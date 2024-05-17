@@ -1,5 +1,15 @@
 <app-header titulo="alert"></app-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button (click)="presentAlert()" expand="block">
+    Alert
+  </ion-button>
 
+  <ion-button (click)="presentAlertMultipleButtons()" expand="block">
+    Alert MultiBottons
+  </ion-button>
+
+  <ion-button (click)="presentAlertPrompt()" expand="block">
+    Alert Prompt
+  </ion-button>
 </ion-content>
